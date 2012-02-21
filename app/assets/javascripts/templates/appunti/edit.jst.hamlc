@@ -1,0 +1,8 @@
+.well
+  %form#edit_appunto
+    %input{ type: "text", name: "cliente_titolo", id: "edit_appunto_cliente_titolo", value: "#{@appunto.get('cliente_titolo')}" , placeholder: "scegli cliente..."}
+    %input{ type: "text", name: "destinatario",   id: "edit_appunto_destinatario",   value: "#{@appunto.get('destinatario')}",    placeholder: "inserisci destinatario..."}
+    %textarea{ type: "text", name: "note",        id: "edit_appunto_note",           value: "#{@appunto.get('note')}",            placeholder: "inserisci appunto..."}
+      = @appunto.get('note')
+    %br
+    %input.btn.btn-success{ type: "submit", value: "Salva"}

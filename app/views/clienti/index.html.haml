@@ -1,0 +1,61 @@
+%h1 Listing clienti
+
+%table
+  %tr
+    %th Titolo
+    %th Cliente tipo
+    %th Nome
+    %th Cognome
+    %th Ragione sociale
+    %th Abbr
+    %th Codice fiscale
+    %th Partita iva
+    %th Indirizzo
+    %th Cap
+    %th Frazione
+    %th Comune
+    %th Provincia
+    %th Telefono
+    %th Telefono 2
+    %th Fax
+    %th Cellulare
+    %th Email
+    %th Url
+    %th Longitude
+    %th Latitude
+    %th User
+    %th
+    %th
+    %th
+
+  - @clienti.each do |cliente|
+    %tr
+      %td= cliente.titolo
+      %td= cliente.cliente_tipo
+      %td= cliente.nome
+      %td= cliente.cognome
+      %td= cliente.ragione_sociale
+      %td= cliente.abbr
+      %td= cliente.codice_fiscale
+      %td= cliente.partita_iva
+      %td= cliente.indirizzo
+      %td= cliente.cap
+      %td= cliente.frazione
+      %td= cliente.comune
+      %td= cliente.provincia
+      %td= cliente.telefono
+      %td= cliente.telefono_2
+      %td= cliente.fax
+      %td= cliente.cellulare
+      %td= cliente.email
+      %td= cliente.url
+      %td= cliente.longitude
+      %td= cliente.latitude
+      %td= cliente.user_id
+      %td= link_to 'Show', cliente
+      %td= link_to 'Edit', edit_cliente_path(cliente)
+      %td= link_to 'Destroy', cliente, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Cliente', new_cliente_path

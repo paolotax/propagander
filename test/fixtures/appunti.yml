@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cliente_id: 1
+  destinatario: MyString
+  note: MyText
+  stato: MyString
+  user_id: 1
+
+two:
+  cliente_id: 1
+  destinatario: MyString
+  note: MyText
+  stato: MyString
+  user_id: 1

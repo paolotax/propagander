@@ -1,0 +1,13 @@
+%div
+  %small.time
+    %time.timeago{ datetime: "#{@appunto.get('data')}"}
+  %a
+    %strong.fullname= @appunto.get('cliente_titolo')
+  %span.destinatario
+    %i= "#{if @appunto.get('destinatario') isnt '' then '@' + @appunto.get('destinatario') else ''}"
+
+  %p= @appunto.get('note')
+  
+  %input{type: 'checkbox', class: 'select-check'}
+      
+  

@@ -1,0 +1,72 @@
+%p#notice= notice
+
+%p
+  %b Titolo:
+  = @cliente.titolo
+%p
+  %b Cliente tipo:
+  = @cliente.cliente_tipo
+%p
+  %b Nome:
+  = @cliente.nome
+%p
+  %b Cognome:
+  = @cliente.cognome
+%p
+  %b Ragione sociale:
+  = @cliente.ragione_sociale
+%p
+  %b Abbr:
+  = @cliente.abbr
+%p
+  %b Codice fiscale:
+  = @cliente.codice_fiscale
+%p
+  %b Partita iva:
+  = @cliente.partita_iva
+%p
+  %b Indirizzo:
+  = @cliente.indirizzo
+%p
+  %b Cap:
+  = @cliente.cap
+%p
+  %b Frazione:
+  = @cliente.frazione
+%p
+  %b Comune:
+  = @cliente.comune
+%p
+  %b Provincia:
+  = @cliente.provincia
+%p
+  %b Telefono:
+  = @cliente.telefono
+%p
+  %b Telefono 2:
+  = @cliente.telefono_2
+%p
+  %b Fax:
+  = @cliente.fax
+%p
+  %b Cellulare:
+  = @cliente.cellulare
+%p
+  %b Email:
+  = @cliente.email
+%p
+  %b Url:
+  = @cliente.url
+%p
+  %b Longitude:
+  = @cliente.longitude
+%p
+  %b Latitude:
+  = @cliente.latitude
+%p
+  %b User:
+  = @cliente.user_id
+
+= link_to 'Edit', edit_cliente_path(@cliente)
+\|
+= link_to 'Back', clienti_path

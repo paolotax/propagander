@@ -1,0 +1,5 @@
+%div{ style: "margin-bottom: 0", class: "alert fade in alert-#{@options.tipo}" }
+  %a.close{ "data-dismiss" => "alert"}
+    x
+  %strong= @options.titolo
+  = @options.messaggio

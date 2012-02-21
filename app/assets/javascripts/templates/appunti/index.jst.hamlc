@@ -1,0 +1,8 @@
+.content-main
+  .content-header
+    .header-inner
+      %h2 Appunti
+  #items
+
+    
+

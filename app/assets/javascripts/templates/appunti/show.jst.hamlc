@@ -1,0 +1,16 @@
+.well
+  %article{id: "appunto_1#{@appunto.get('cliente_id')}", class: "appunto"}
+    %p
+      %label.label Cliente
+      = @appunto.get("cliente_titolo")
+    %p
+      %label.label Destinatario
+      = @appunto.get("destinatario")
+    %p
+      %label.label Note
+      = @appunto.get("note")
+
+  %hr
+
+  %button.destroy.btn.btn-danger.btn-small Elimina
+  %button.edit.btn.btn-primary.btn-small Modifica

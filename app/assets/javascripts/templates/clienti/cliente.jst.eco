@@ -1,0 +1,3 @@
+<%= @cliente.get('titolo') %>
+<%= @cliente.get('comune') %>
+<%= @cliente.get('provincia') %>
