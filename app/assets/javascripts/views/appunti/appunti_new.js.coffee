@@ -35,7 +35,6 @@ class Propagander.Views.AppuntiNew extends Backbone.View
 
   createAppunto: (e) ->
     e.preventDefault()
-    
     cliente_id = @getClienteId()
     
     attributes = 
@@ -52,6 +51,7 @@ class Propagander.Views.AppuntiNew extends Backbone.View
       wait: true
       success: (@model) -> 
         $('#new_appunto')[0].reset()
+        this.$('#new_appunto_cliente_titolo').focus()
         Backbone.history.navigate("appunti/#{@model.get('id')}", true)
         
         options =

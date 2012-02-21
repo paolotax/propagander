@@ -1,8 +1,10 @@
-%div
+%div.appunto
   %small.time
     %time.timeago{ datetime: "#{@appunto.get('data')}"}
   %a
+    %img.avatar{ src: "assets/#{@appunto.get('cliente_tipo')}.png"}
     %strong.fullname= @appunto.get('cliente_titolo')
+
   %span.destinatario
     %i= "#{if @appunto.get('destinatario') isnt '' then '@' + @appunto.get('destinatario') else ''}"
 
